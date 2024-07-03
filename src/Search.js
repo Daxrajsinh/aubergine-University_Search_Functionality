@@ -12,7 +12,7 @@ function Search() {
                 <div>
                     <input
                     type="text"
-                    placeholder="search university by country..."
+                    placeholder="🔍 "
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     />

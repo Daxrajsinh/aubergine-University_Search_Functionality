@@ -2,8 +2,6 @@ import React from "react";
 import { useGlobalContext } from "./context";
 import { NavLink } from "react-router-dom";
 
-const imgUrl = "https://via.placeholder.com/200";
-
 function University() {
   const { university, isLoading } = useGlobalContext();
   if (isLoading) {
@@ -17,7 +15,7 @@ function University() {
           {university && university.map((curUniversityElem) => {
             const Name = curUniversityElem.name;
             const Country = curUniversityElem.country;
-            const State = curUniversityElem.state;
+            const State = curUniversityElem["state-province"];            ;
             const webpages = curUniversityElem.web_pages[0];
 
             // const { Name, Country, State, Image } = curUniversityElem;
@@ -27,6 +25,8 @@ function University() {
                 <div className="card">
                   <div className="card-info">
                   <h2>{Name}</h2>
+                  <h3>Country: {Country}</h3>
+                  <h3>State: {State}</h3>
                   <a href={webpages}>{webpages}</a>
                   </div>
                 </div>
