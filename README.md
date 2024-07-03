@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# University Search Functionality
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application provides a user-friendly interface to search and display details of universities based on selected country and state/province. Users can also download specific university cards as JPEG images.
 
-## Available Scripts
+## Repository
 
-In the project directory, you can run:
+API Repository: [University Domains List](https://github.com/Hipo/university-domains-list)
 
-### `npm start`
+For further details on the API, refer to the [API Documentation](https://github.com/Hipo/university-domains-list#2---using-the-hosted-api).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies used:
+- React.js && CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tasks
 
-### `npm test`
+### Level 1: Basic Search Functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 1. Search by Country
 
-### `npm run build`
+- Implement a search functionality to filter and display universities based on the selected country.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### UI Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Country Input Field:** Create a text input field where users can enter the country name.
+- **University Cards:** Display university cards showing the university name with a link to their website below the input field.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Level 2: Enhanced Search with Province Filtering
 
-### `npm run eject`
+#### 1. State/Province Dropdown
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- After selecting a country, populate a dropdown with unique state/province values from the university data of that specific country.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 2. Filter by Province
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Upon selecting a state/province from the dropdown, update the displayed cards to show universities only from that state/province.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### UI Instructions
 
-## Learn More
+- **Dropdown:** Dynamically populate a dropdown menu with state/province names after a country is entered.
+- **Updated University Cards:** Update the cards to display universities from the selected state/province, including links to their websites.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Level 3: Download the University Card as a JPEG
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 1. Download Functionality
 
-### Code Splitting
+- Allow users to download any specific university card as a JPEG image.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### UI Instructions
 
-### Analyzing the Bundle Size
+- Implement the download functionality in a suitable manner to enable users to download university cards as JPEG images.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Implementation Details
 
-### Making a Progressive Web App
+- The application utilizes the University Domains List API to fetch university data.
+- Frontend is built using React, and CSS for interactive user interface and functionality.
+- Backend interactions are handled via API calls to fetch and filter university data based on user selections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Setup Instructions
+```bash
+  cd <project-directory>
+  npm run start
+```
