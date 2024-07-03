@@ -25,6 +25,7 @@ function University() {
                 <div className="card">
                   <div className="card-info">
                   <h2>{Name}</h2>
+                  <br></br>
                   <h3>Country: {Country}</h3>
                   <h3>State: {State}</h3>
                   <a href={webpages}>{webpages}</a>
