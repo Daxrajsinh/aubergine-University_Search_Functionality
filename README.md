@@ -1,6 +1,8 @@
 # University Search Functionality
 
-This application provides a user-friendly interface to search and display details of universities based on selected country and state/province. Users can also download specific university cards as JPEG images.
+This application provides a user-friendly interface to search and display details of universities based on selected country and state/province. Users can also download specific university cards as JPEG images.<br>
+
+![image](https://github.com/Daxrajsinh/aubergine-University_Search_Functionality/assets/107194145/7fffc3da-7987-440c-b739-5acc15faf8b6)
 
 ## Repository
 
