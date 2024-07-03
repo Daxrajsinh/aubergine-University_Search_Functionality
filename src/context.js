@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-    const [query, setQuery] = useState("middle");
+    const [query, setQuery] = useState("");
     const { isLoading, isError, university } = useFetch(`search?country=${query}`);
   
     return (
