@@ -4,18 +4,18 @@ import University from "./University";
 
 function SingleUniversity() {
     const {id} = useParams();
-    const {isLoading, movie, isError} = useFetch(`&i=${id}`);
+    const {isLoading, university, isError} = useFetch(`&i=${id}`);
 
     if(isLoading) {
         return (
-            <section className="movie-section">
+            <section className="university-section">
                 <div className="loading">Loading...</div>
             </section>
         );
     }
     
     return (
-        <section className="university-section">
+        <section>
             <div className="university-card">
                 <figure>
                 <img src={University.Image} alt="" />
@@ -23,7 +23,6 @@ function SingleUniversity() {
                 <div className="card-content">
                 <p className="title">{University.Title}</p>
                 <p className=""></p>
-                <p className="card-text">{University.Released}</p>
                 <p className="card-text">{University.Country}</p>
                 <NavLink to="/" className="back-btn">
                     Go Back

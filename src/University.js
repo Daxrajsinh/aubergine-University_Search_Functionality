@@ -18,16 +18,16 @@ function University() {
             const Name = curUniversityElem.name;
             const Country = curUniversityElem.country;
             const State = curUniversityElem.state;
-            const Image = curUniversityElem.image;
+            const webpages = curUniversityElem.web_pages[0];
 
             // const { Name, Country, State, Image } = curUniversityElem;
 
             return (
-              <NavLink to={`university/${Country}`} key={Country}>
+              <NavLink>
                 <div className="card">
                   <div className="card-info">
-                    <h2>University: {Name}</h2>
-                    <img src={Image === "" ? imgUrl : Image} alt={Name} />
+                  <h2>{Name}</h2>
+                  <a href={webpages}>{webpages}</a>
                   </div>
                 </div>
               </NavLink>
